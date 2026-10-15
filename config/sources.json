@@ -1,0 +1,46 @@
+[
+  {
+    "id": "aviles",
+    "entity": "Ayuntamiento de Avilés",
+    "catalog": "https://datos.gob.es/es/catalogo/l01330045-avisos-sugerencias-quejas-y-reclamaciones",
+    "url": "https://datos.aviles.es/datastore/dump/30fff6bb-c1a4-49dd-a0a7-a7106421b614?format=csv&bom=True",
+    "license_catalog": "http://www.opendefinition.org/licenses/cc-by",
+    "location": "Avilés, España",
+    "language_catalog": "español e inglés",
+    "compatibility": "Pendiente de inspección de textos libres y mapeo C1–C8"
+  },
+  {
+    "id": "la_carlota",
+    "entity": "Ayuntamiento de La Carlota",
+    "catalog": "https://datos.gob.es/es/catalogo/l01140174-avisos-incidencias-quejas-sugerencias-y-reclamaciones",
+    "url": "https://enlaza.eprinsa.es/file/datahub/41ac6ba6-f8f6-4372-ab5b-946bf3bed680.csv",
+    "license_catalog": "http://creativecommons.org/licenses/by-nc/2.0/cc-by-sa-4.0",
+    "location": "La Carlota, España",
+    "language_catalog": "español",
+    "compatibility": "Licencia del catálogo combina identificadores incompatibles; aclarar antes de reutilizar"
+  },
+  {
+    "id": "valladolid_2020",
+    "entity": "Ayuntamiento de Valladolid",
+    "catalog": "https://datos.gob.es/es/catalogo/l01471868-incidencias-quejas-sugerencias-y-reclamaciones",
+    "url": "https://www.valladolid.es/es/temas/hacemos/open-data-datos-abiertos/catalogo-datos/ficheros-datos-elaborados-clasificados-sectores/sector-publico.ficheros/682291-D0072-2020.csv",
+    "license_catalog": "https://creativecommons.org/licenses/by/3.0/es/",
+    "location": "Valladolid, España",
+    "language_catalog": "español: etiquetas administrativas inspeccionadas",
+    "compatibility": "Solo análisis descriptivo; no hay descripciones libres. No admite entrenamiento textual.",
+    "license_evidence": "https://www.valladolid.es/es/temas/hacemos/open-data-datos-abiertos",
+    "training_eligible": false,
+    "has_free_text": false,
+    "local_report": "reports/sources/valladolid_2020.json"
+  },
+  {
+    "id": "senace",
+    "entity": "Servicio Nacional de Certificación Ambiental para las Inversiones Sostenibles",
+    "catalog": "https://www.datosabiertos.gob.pe/dataset/relación-de-reclamos-senace/resource/6f34d9ef-b197-4d69-b762-0219a92b48a0",
+    "url": "https://datosabiertos.senace.gob.pe/home/VistaDatos/reclamo?dataset=RELACI%C3%93N+DE+RECLAMOS&id=24&q=",
+    "license_catalog": null,
+    "location": "Perú; reclamos sobre atención del Senace",
+    "language_catalog": "español observado en vista indexada",
+    "compatibility": "Reclamaciones administrativas ajenas al alcance urbano; no usar automáticamente como C1–C8; archivo Reporte_Reclamos_Senace.csv por localizar"
+  }
+]

@@ -1,0 +1,158 @@
+tema_original,registros,categoria_orientativa,estado_mapeo,motivo,validado_humano
+Calles. Limpieza,22253,C1,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Información,15855,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+Jardines. Arboles,12583,C5,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Pavimentación. Arreglo aceras,8801,C2,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Policía. Vigilancia policial,8421,C4,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Contenedores. Ubicación,5637,C1,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Señalización viaria. Nueva señalización,5274,C3,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Alumbrado público. Averías,5206,C7,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Vigilancia policial,5065,C4,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Contenedores. Limpieza,4918,C1,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Pavimentación. Arreglo calzadas,4653,C2,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Jardines. Zonas verdes,4618,C5,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Otros,4438,,ambiguo,La etiqueta sola no determina problema dominante,False
+Animales. Plagas diversas,4361,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+Calles. Recogida de enseres,4226,C1,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Alumbrado público. Farolas fundidas,3736,C7,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Jardines. Limpieza,3535,,ambiguo,La etiqueta sola no determina problema dominante,False
+Salud. Cucarachas,3470,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+Pintadas edificios,3400,,ambiguo,La etiqueta sola no determina problema dominante,False
+Mobiliario urbano. Tapas de registro,3321,,ambiguo,La etiqueta sola no determina problema dominante,False
+Mantenimiento,3145,,ambiguo,La etiqueta sola no determina problema dominante,False
+Alumbrado público,3142,C7,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Señalización viaria. Mantenimiento,3105,C3,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Autobuses urbanos,2945,C3,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Calles. Pintadas edificios,2863,,ambiguo,La etiqueta sola no determina problema dominante,False
+Salud. Ratas,2587,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+Alcantarillado,2342,C8,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Jardines. Averías de riego,2200,C5,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Mobiliario urbano. Bancos,1935,C5,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Tasas y Tributos,1657,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+Admon. electronica,1606,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+Salud. Solares,1570,,ambiguo,La etiqueta sola no determina problema dominante,False
+Salud. Animales diversos,1546,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+Fugas de agua,1361,C8,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Tráfico. Infracciones,1347,C3,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Mobiliario urbano. Bolardos,1295,C2,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Jardines. Zonas de juego de niños,1247,C5,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Recogida de enseres,1228,C1,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Agradecimientos,1208,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+Bicicletas,1052,,ambiguo,La etiqueta sola no determina problema dominante,False
+Contenedores. Arreglo,1024,C1,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Asuntos Sociales,942,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+Salud. Palomas,941,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+Jardines. Fuentes,927,,ambiguo,La etiqueta sola no determina problema dominante,False
+Semáforos. Averías,922,C3,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Centros escolares,892,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+Mobiliario urbano. Papeleras,889,C1,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Relaciones oficiales,888,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+Jardines. Mobiliario,885,C5,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Pavimentación. Accesos obras,856,C2,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Infracciones tráfico,791,C3,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Formación y empleo,720,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+Aparcamientos,706,C3,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Alumbrado público. Nuevas instalaciones,683,C7,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Jardines. Zonas de juego,625,C5,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Jardines. Plagas,610,,ambiguo,La etiqueta sola no determina problema dominante,False
+Salud. Perros,564,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+Centros cívicos. Instalaciones,536,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+Animales. Palomas,533,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+Vehículos abandonados,525,C3,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Semáforos. Nuevas instalaciones,524,C3,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Ingresos,517,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+Ferias y fiestas,506,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+Policía. Vehículos abandonados,482,C3,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Animales. Perros,464,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+Centros cívicos. Actividades,455,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+Mobiliario urbano. Fuentes,454,,ambiguo,La etiqueta sola no determina problema dominante,False
+Solares. Privados,435,,ambiguo,La etiqueta sola no determina problema dominante,False
+Turismo. Fiestas,419,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+Ruidos,398,,ambiguo,La etiqueta sola no determina problema dominante,False
+Cultura,387,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+Mobiliario urbano. Reloj Termómetro,383,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+Información Sanitaria,374,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+Tasa de basuras,352,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+Inst. deportivas. Mantenimiento,338,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+Inst. deportivas. Piscinas munic. Instalaciones,335,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+Placas calles,334,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+T. Embargos,314,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+Solares. Públicos,311,,ambiguo,La etiqueta sola no determina problema dominante,False
+Ocupación vía pública,309,,ambiguo,La etiqueta sola no determina problema dominante,False
+Ruidos. Otros,299,,ambiguo,La etiqueta sola no determina problema dominante,False
+Licencias,297,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+Policía. Contenedores escombros,252,,ambiguo,La etiqueta sola no determina problema dominante,False
+Mobiliario urbano. Vallas,247,C2,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Mobiliario urbano. Jardineras,215,C5,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Canchas deportivas. Mantenimiento,207,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+Mobiliarios Urbanos,200,,ambiguo,La etiqueta sola no determina problema dominante,False
+Olores,198,,ambiguo,La etiqueta sola no determina problema dominante,False
+Piscinas municipales. Irregularidades cubetas,189,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+Turismo. Información,183,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+Plagas. Cucarachas,164,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+Autobuses Urbanos,163,C3,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Inspecciones. Domicilios,158,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+Jardines. Aparatos Biosaludables,153,C5,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Calles. Olores,151,,ambiguo,La etiqueta sola no determina problema dominante,False
+Inst. deportivas. Piscinas actividades,140,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+Salud. Inspecciones. Domicilios,136,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+Mobiliario urbano. Depósitos de pilas,136,C1,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Inst. deportivas. Mobiliario,125,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+Mobiliario urbano. Vallas de obras,116,,ambiguo,La etiqueta sola no determina problema dominante,False
+Contenedores. Contenedores escombros,103,,ambiguo,La etiqueta sola no determina problema dominante,False
+Innovación y Comercio,100,,ambiguo,La etiqueta sola no determina problema dominante,False
+Embargos,100,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+Mobiliario urbano. Marquesinas autobuses,99,C3,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Salud. Inspecciones. Locales abandonados,95,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+Tributos,94,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+Inspecciones. Locales abandonados,93,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+Pista patinaje,88,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+Mobiliario urbano. Carteleras,88,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+Plagas. Ratas,81,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+"Bibliotecas: Mantenimiento, libros, etc.",81,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+Inspección Técnica Edificios,78,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+Plagas diversas,73,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+Solares,71,,ambiguo,La etiqueta sola no determina problema dominante,False
+Planeamiento Urbanístico,66,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+Licencias ambientales,64,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+Mobiliario urbano. Vallas de actividades,63,,ambiguo,La etiqueta sola no determina problema dominante,False
+Inst. deportivas. Limpieza,63,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+Piscinas municipales. Mantenimientos,62,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+Canchas deportivas. Mobiliario,61,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+Toros,56,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+Laureada,46,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+Plagas. Palomas,28,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+Ruidos. Trabajo,27,,ambiguo,La etiqueta sola no determina problema dominante,False
+Piscinas municipales. Limpieza,18,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+VIVA,8,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+Inst. deportivas. Piscinas munic. Mantenimientos,7,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+Salud. Plagas diversas,7,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+Invitación,6,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+Fiestas,5,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+Canchas deportivas. Limpieza,3,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+otros,3,,ambiguo,La etiqueta sola no determina problema dominante,False
+,2,,vacio,No existe tema administrativo,False
+Salas exposiciones/ ferias temáticas,2,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+Señalización viaria. Nueva Señalización,2,C3,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Vigilancia Policial,1,C4,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Mobiliario urbano. Depósito de pilas,1,C1,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+vigilancia policial,1,C4,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+mobiliario urbano. carteleras,1,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+Mobiliario urbano. Tapas de Registro,1,,ambiguo,La etiqueta sola no determina problema dominante,False
+Instalaciones deportivas. Piscinas munic. Mantenimientos,1,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+Policía. Vigilancia Policial,1,C4,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Tasas Y Tributos,1,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+bicicletas,1,,ambiguo,La etiqueta sola no determina problema dominante,False
+Asuntos sociales,1,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+Inst. deportivas. Piscinas mun. Mantenimientos,1,,sin_correspondencia,Etiqueta sin correspondencia documentada; requiere inspección,False
+Señalización Viaria. Nueva señalización,1,C3,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Mobiliarios urbanos,1,,ambiguo,La etiqueta sola no determina problema dominante,False
+Relaciones Oficiales,1,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+Agradecimiento,1,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+Jardines. Avería de riego,1,C5,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Jardines. Árboles.,1,C5,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Alumbrado Público,1,C7,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Pavimenación. Accesos obras,1,C2,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Titularidad inmuebles,1,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False
+Jardines. Árboles,1,C5,compatible_orientativo,"Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",False
+Igualdad e Infancia,1,,fuera_de_alcance,Tema fuera del clasificador de incidencias urbanas,False

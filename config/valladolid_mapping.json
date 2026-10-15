@@ -1,0 +1,17 @@
+{
+  "version": "valladolid-temas-v1",
+  "purpose": "Correspondencia orientativa de etiquetas administrativas para análisis descriptivo; no etiquetas de entrenamiento",
+  "human_validated": false,
+  "compatible": {
+    "C1": ["Calles. Limpieza", "Contenedores. Ubicación", "Contenedores. Limpieza", "Calles. Recogida de enseres", "Recogida de enseres", "Contenedores. Arreglo", "Mobiliario urbano. Papeleras", "Mobiliario urbano. Depósitos de pilas", "Mobiliario urbano. Depósito de pilas"],
+    "C2": ["Pavimentación. Arreglo aceras", "Pavimentación. Arreglo calzadas", "Pavimentación. Accesos obras", "Pavimenación. Accesos obras", "Mobiliario urbano. Bolardos", "Mobiliario urbano. Vallas"],
+    "C3": ["Señalización viaria. Nueva señalización", "Señalización viaria. Mantenimiento", "Autobuses urbanos", "Tráfico. Infracciones", "Infracciones tráfico", "Aparcamientos", "Vehículos abandonados", "Policía. Vehículos abandonados", "Semáforos. Averías", "Semáforos. Nuevas instalaciones", "Mobiliario urbano. Marquesinas autobuses"],
+    "C4": ["Policía. Vigilancia policial", "Vigilancia policial"],
+    "C5": ["Jardines. Arboles", "Jardines. Árboles.", "Jardines. Zonas verdes", "Jardines. Averías de riego", "Jardines. Avería de riego", "Mobiliario urbano. Bancos", "Jardines. Zonas de juego de niños", "Jardines. Zonas de juego", "Jardines. Mobiliario", "Mobiliario urbano. Jardineras", "Jardines. Aparatos Biosaludables"],
+    "C6": [],
+    "C7": ["Alumbrado público. Averías", "Alumbrado público. Farolas fundidas", "Alumbrado público", "Alumbrado público. Nuevas instalaciones"],
+    "C8": ["Alcantarillado", "Fugas de agua"]
+  },
+  "ambiguous": ["Jardines. Limpieza", "Mobiliario urbano. Tapas de registro", "Pintadas edificios", "Calles. Pintadas edificios", "Mantenimiento", "Otros", "Ruidos", "Ruidos. Otros", "Ruidos. Trabajo", "Ocupación vía pública", "Innovación y Comercio", "Jardines. Fuentes", "Mobiliario urbano. Fuentes", "Policía. Contenedores escombros", "Contenedores. Contenedores escombros", "Mobiliarios Urbanos", "Olores", "Calles. Olores", "Solares", "Salud. Solares", "Solares. Públicos", "Solares. Privados", "Bicicletas", "Jardines. Plagas", "Mobiliario urbano. Vallas de obras", "Mobiliario urbano. Vallas de actividades"],
+  "out_of_scope": ["Información", "Tasas y Tributos", "Tasa de basuras", "Tributos", "Admon. electronica", "Licencias", "Licencias ambientales", "Agradecimientos", "Agradecimiento", "Relaciones oficiales", "Solicitud de información", "Embargos", "T. Embargos", "Ingresos", "Formación y empleo", "Asuntos Sociales", "Cultura", "Turismo. Información", "Turismo. Fiestas", "Ferias y fiestas", "Fiestas", "Invitación", "Centros escolares", "Centros cívicos. Actividades", "Centros cívicos. Instalaciones", "Información Sanitaria", "Planeamiento Urbanístico", "Inspección Técnica Edificios", "Titularidad inmuebles", "Igualdad e Infancia", "Laureada", "VIVA", "Toros", "Salas exposiciones/ ferias temáticas"]
+}

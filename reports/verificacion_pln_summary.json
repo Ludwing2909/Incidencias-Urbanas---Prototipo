@@ -1,0 +1,32 @@
+{
+  "fecha": "2026-10-14T18:47:43.922554+00:00",
+  "python": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "78",
+    "time": "90.032",
+    "timestamp": "2026-10-14T13:43:56.490728-05:00",
+    "hostname": "DESKTOP-IU7IPD1"
+  },
+  "navegador": {
+    "startTime": "2026-10-14T18:32:16.256Z",
+    "duration": 21493.146,
+    "expected": 8,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "build": "TypeScript/Vite pasado; 41 módulos; JS 287.53 kB / gzip 89.11 kB",
+  "migracion": "0002 aplicada en SQLite; respaldo previo íntegro",
+  "modelo_activo": "demo-v3",
+  "candidato": "pln-expanded-demo-20261014; no activado",
+  "postgresql": {
+    "fecha": "2026-10-14T18:23:34.911770+00:00",
+    "estado": "bloqueado",
+    "comprobaciones": [],
+    "motivo": "Motor Docker Linux no disponible; migraciones, concurrencia y restauración PostgreSQL no ejecutadas"
+  },
+  "qa_visual": "6 capturas inspeccionadas; sin errores JS ni overflow móvil"
+}

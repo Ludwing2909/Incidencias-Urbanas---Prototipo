@@ -1,0 +1,2 @@
+import {defineConfig} from '@playwright/test'
+export default defineConfig({testDir:'./tests',workers:1,timeout:30000,reporter:[['list'],['json',{outputFile:'../reports/playwright.json'}]],use:{baseURL:'http://127.0.0.1:5173',trace:'off'},webServer:[{command:'..\\.venv\\Scripts\\python.exe ..\\scripts\\e2e_api.py',url:'http://127.0.0.1:8000/api/v1/health/ready',reuseExistingServer:false},{command:'npm run dev',url:'http://127.0.0.1:5173',reuseExistingServer:false}]})

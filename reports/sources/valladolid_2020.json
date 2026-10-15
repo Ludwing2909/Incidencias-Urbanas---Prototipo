@@ -1,0 +1,1425 @@
+{
+  "source_id": "valladolid_2020",
+  "entity": "Ayuntamiento de Valladolid",
+  "location": "Valladolid, España",
+  "file_name": "682291-D0072-2020.csv",
+  "access_date": "2026-10-13T10:19:08.906192-05:00",
+  "source_url": "https://www.valladolid.es/es/temas/hacemos/open-data-datos-abiertos/catalogo-datos/ficheros-datos-elaborados-clasificados-sectores/sector-publico",
+  "license": "CC BY 3.0 ES (condición general del portal, salvo indicación específica contraria)",
+  "license_url": "https://www.valladolid.es/es/temas/hacemos/open-data-datos-abiertos",
+  "attribution": "Fuente: Ayuntamiento de Valladolid, Incidencias, quejas, sugerencias y reclamaciones hasta 2020. Extracción y correspondencias orientativas del equipo del proyecto; sin respaldo institucional.",
+  "sha256": "25f7ae0176acaadb6de0c85f23eafc9185ab3f4ac463fff4c912b461733558fe",
+  "bytes": 24873907,
+  "encoding": "utf-8-sig",
+  "separator": ";",
+  "rows": 202296,
+  "columns": [
+    "peticion",
+    "canal_entrada",
+    "fecha_peticion",
+    "tipo",
+    "estado",
+    "tema",
+    "fecha_cierre",
+    "canal_respuesta",
+    "x",
+    "y",
+    "LON",
+    "LAT"
+  ],
+  "unique_request_ids": 202296,
+  "numeric_request_ids": 202296,
+  "nonempty": {
+    "peticion": 202296,
+    "canal_entrada": 202296,
+    "fecha_peticion": 202296,
+    "tipo": 202292,
+    "estado": 202296,
+    "tema": 202294,
+    "fecha_cierre": 202296,
+    "canal_respuesta": 201490,
+    "x": 70256,
+    "y": 70186,
+    "LON": 70256,
+    "LAT": 70186
+  },
+  "unique_topic_labels": 156,
+  "period": {
+    "from": "2009-07-31",
+    "to": "2020-12-30",
+    "invalid_dates": 0
+  },
+  "has_free_text": false,
+  "training_eligible": false,
+  "training_rows_extracted": 0,
+  "exclusion_reasons": [
+    "No contiene descripciones ciudadanas libres",
+    "peticion es un identificador; tema es la etiqueta administrativa",
+    "Usar tema como texto predictor filtraría la respuesta al modelo"
+  ],
+  "privacy": {
+    "coordinate_rows_excluded": 70258,
+    "identifiers_exported": false,
+    "coordinates_exported": false,
+    "row_level_records_exported": false
+  },
+  "mapping_version": "valladolid-temas-v1",
+  "mapping_sha256": "24fce59d25ae82f47b026b71b0e80658ac71bba176a5316857b3712b46d2ac79",
+  "mapping_human_validated": false,
+  "by_category": {
+    "C1": 40312,
+    "C2": 15853,
+    "C3": 16886,
+    "C4": 13489,
+    "C5": 24464,
+    "C6": 0,
+    "C7": 12768,
+    "C8": 3703
+  },
+  "by_mapping_status": {
+    "compatible_orientativo": 127475,
+    "fuera_de_alcance": 28639,
+    "ambiguo": 28354,
+    "sin_correspondencia": 17826,
+    "vacio": 2
+  },
+  "by_type": {
+    "Queja": 175797,
+    "Solicitud de información": 22413,
+    "Sugerencia": 4081,
+    "": 4,
+    "Reclamación": 1
+  },
+  "by_year": [
+    {
+      "anio": 2009,
+      "registros": 6810
+    },
+    {
+      "anio": 2010,
+      "registros": 16477
+    },
+    {
+      "anio": 2011,
+      "registros": 16731
+    },
+    {
+      "anio": 2012,
+      "registros": 13669
+    },
+    {
+      "anio": 2013,
+      "registros": 13057
+    },
+    {
+      "anio": 2014,
+      "registros": 13590
+    },
+    {
+      "anio": 2015,
+      "registros": 15892
+    },
+    {
+      "anio": 2016,
+      "registros": 17261
+    },
+    {
+      "anio": 2017,
+      "registros": 19853
+    },
+    {
+      "anio": 2018,
+      "registros": 20390
+    },
+    {
+      "anio": 2019,
+      "registros": 21841
+    },
+    {
+      "anio": 2020,
+      "registros": 26725
+    }
+  ],
+  "topics": [
+    {
+      "tema_original": "Calles. Limpieza",
+      "registros": 22253,
+      "categoria_orientativa": "C1",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Información",
+      "registros": 15855,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Jardines. Arboles",
+      "registros": 12583,
+      "categoria_orientativa": "C5",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Pavimentación. Arreglo aceras",
+      "registros": 8801,
+      "categoria_orientativa": "C2",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Policía. Vigilancia policial",
+      "registros": 8421,
+      "categoria_orientativa": "C4",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Contenedores. Ubicación",
+      "registros": 5637,
+      "categoria_orientativa": "C1",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Señalización viaria. Nueva señalización",
+      "registros": 5274,
+      "categoria_orientativa": "C3",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Alumbrado público. Averías",
+      "registros": 5206,
+      "categoria_orientativa": "C7",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Vigilancia policial",
+      "registros": 5065,
+      "categoria_orientativa": "C4",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Contenedores. Limpieza",
+      "registros": 4918,
+      "categoria_orientativa": "C1",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Pavimentación. Arreglo calzadas",
+      "registros": 4653,
+      "categoria_orientativa": "C2",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Jardines. Zonas verdes",
+      "registros": 4618,
+      "categoria_orientativa": "C5",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Otros",
+      "registros": 4438,
+      "categoria_orientativa": null,
+      "estado_mapeo": "ambiguo",
+      "motivo": "La etiqueta sola no determina problema dominante",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Animales. Plagas diversas",
+      "registros": 4361,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Calles. Recogida de enseres",
+      "registros": 4226,
+      "categoria_orientativa": "C1",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Alumbrado público. Farolas fundidas",
+      "registros": 3736,
+      "categoria_orientativa": "C7",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Jardines. Limpieza",
+      "registros": 3535,
+      "categoria_orientativa": null,
+      "estado_mapeo": "ambiguo",
+      "motivo": "La etiqueta sola no determina problema dominante",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Salud. Cucarachas",
+      "registros": 3470,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Pintadas edificios",
+      "registros": 3400,
+      "categoria_orientativa": null,
+      "estado_mapeo": "ambiguo",
+      "motivo": "La etiqueta sola no determina problema dominante",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Mobiliario urbano. Tapas de registro",
+      "registros": 3321,
+      "categoria_orientativa": null,
+      "estado_mapeo": "ambiguo",
+      "motivo": "La etiqueta sola no determina problema dominante",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Mantenimiento",
+      "registros": 3145,
+      "categoria_orientativa": null,
+      "estado_mapeo": "ambiguo",
+      "motivo": "La etiqueta sola no determina problema dominante",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Alumbrado público",
+      "registros": 3142,
+      "categoria_orientativa": "C7",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Señalización viaria. Mantenimiento",
+      "registros": 3105,
+      "categoria_orientativa": "C3",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Autobuses urbanos",
+      "registros": 2945,
+      "categoria_orientativa": "C3",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Calles. Pintadas edificios",
+      "registros": 2863,
+      "categoria_orientativa": null,
+      "estado_mapeo": "ambiguo",
+      "motivo": "La etiqueta sola no determina problema dominante",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Salud. Ratas",
+      "registros": 2587,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Alcantarillado",
+      "registros": 2342,
+      "categoria_orientativa": "C8",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Jardines. Averías de riego",
+      "registros": 2200,
+      "categoria_orientativa": "C5",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Mobiliario urbano. Bancos",
+      "registros": 1935,
+      "categoria_orientativa": "C5",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Tasas y Tributos",
+      "registros": 1657,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Admon. electronica",
+      "registros": 1606,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Salud. Solares",
+      "registros": 1570,
+      "categoria_orientativa": null,
+      "estado_mapeo": "ambiguo",
+      "motivo": "La etiqueta sola no determina problema dominante",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Salud. Animales diversos",
+      "registros": 1546,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Fugas de agua",
+      "registros": 1361,
+      "categoria_orientativa": "C8",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Tráfico. Infracciones",
+      "registros": 1347,
+      "categoria_orientativa": "C3",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Mobiliario urbano. Bolardos",
+      "registros": 1295,
+      "categoria_orientativa": "C2",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Jardines. Zonas de juego de niños",
+      "registros": 1247,
+      "categoria_orientativa": "C5",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Recogida de enseres",
+      "registros": 1228,
+      "categoria_orientativa": "C1",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Agradecimientos",
+      "registros": 1208,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Bicicletas",
+      "registros": 1052,
+      "categoria_orientativa": null,
+      "estado_mapeo": "ambiguo",
+      "motivo": "La etiqueta sola no determina problema dominante",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Contenedores. Arreglo",
+      "registros": 1024,
+      "categoria_orientativa": "C1",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Asuntos Sociales",
+      "registros": 942,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Salud. Palomas",
+      "registros": 941,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Jardines. Fuentes",
+      "registros": 927,
+      "categoria_orientativa": null,
+      "estado_mapeo": "ambiguo",
+      "motivo": "La etiqueta sola no determina problema dominante",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Semáforos. Averías",
+      "registros": 922,
+      "categoria_orientativa": "C3",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Centros escolares",
+      "registros": 892,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Mobiliario urbano. Papeleras",
+      "registros": 889,
+      "categoria_orientativa": "C1",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Relaciones oficiales",
+      "registros": 888,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Jardines. Mobiliario",
+      "registros": 885,
+      "categoria_orientativa": "C5",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Pavimentación. Accesos obras",
+      "registros": 856,
+      "categoria_orientativa": "C2",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Infracciones tráfico",
+      "registros": 791,
+      "categoria_orientativa": "C3",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Formación y empleo",
+      "registros": 720,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Aparcamientos",
+      "registros": 706,
+      "categoria_orientativa": "C3",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Alumbrado público. Nuevas instalaciones",
+      "registros": 683,
+      "categoria_orientativa": "C7",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Jardines. Zonas de juego",
+      "registros": 625,
+      "categoria_orientativa": "C5",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Jardines. Plagas",
+      "registros": 610,
+      "categoria_orientativa": null,
+      "estado_mapeo": "ambiguo",
+      "motivo": "La etiqueta sola no determina problema dominante",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Salud. Perros",
+      "registros": 564,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Centros cívicos. Instalaciones",
+      "registros": 536,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Animales. Palomas",
+      "registros": 533,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Vehículos abandonados",
+      "registros": 525,
+      "categoria_orientativa": "C3",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Semáforos. Nuevas instalaciones",
+      "registros": 524,
+      "categoria_orientativa": "C3",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Ingresos",
+      "registros": 517,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Ferias y fiestas",
+      "registros": 506,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Policía. Vehículos abandonados",
+      "registros": 482,
+      "categoria_orientativa": "C3",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Animales. Perros",
+      "registros": 464,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Centros cívicos. Actividades",
+      "registros": 455,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Mobiliario urbano. Fuentes",
+      "registros": 454,
+      "categoria_orientativa": null,
+      "estado_mapeo": "ambiguo",
+      "motivo": "La etiqueta sola no determina problema dominante",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Solares. Privados",
+      "registros": 435,
+      "categoria_orientativa": null,
+      "estado_mapeo": "ambiguo",
+      "motivo": "La etiqueta sola no determina problema dominante",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Turismo. Fiestas",
+      "registros": 419,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Ruidos",
+      "registros": 398,
+      "categoria_orientativa": null,
+      "estado_mapeo": "ambiguo",
+      "motivo": "La etiqueta sola no determina problema dominante",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Cultura",
+      "registros": 387,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Mobiliario urbano. Reloj Termómetro",
+      "registros": 383,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Información Sanitaria",
+      "registros": 374,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Tasa de basuras",
+      "registros": 352,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Inst. deportivas. Mantenimiento",
+      "registros": 338,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Inst. deportivas. Piscinas munic. Instalaciones",
+      "registros": 335,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Placas calles",
+      "registros": 334,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "T. Embargos",
+      "registros": 314,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Solares. Públicos",
+      "registros": 311,
+      "categoria_orientativa": null,
+      "estado_mapeo": "ambiguo",
+      "motivo": "La etiqueta sola no determina problema dominante",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Ocupación vía pública",
+      "registros": 309,
+      "categoria_orientativa": null,
+      "estado_mapeo": "ambiguo",
+      "motivo": "La etiqueta sola no determina problema dominante",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Ruidos. Otros",
+      "registros": 299,
+      "categoria_orientativa": null,
+      "estado_mapeo": "ambiguo",
+      "motivo": "La etiqueta sola no determina problema dominante",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Licencias",
+      "registros": 297,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Policía. Contenedores escombros",
+      "registros": 252,
+      "categoria_orientativa": null,
+      "estado_mapeo": "ambiguo",
+      "motivo": "La etiqueta sola no determina problema dominante",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Mobiliario urbano. Vallas",
+      "registros": 247,
+      "categoria_orientativa": "C2",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Mobiliario urbano. Jardineras",
+      "registros": 215,
+      "categoria_orientativa": "C5",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Canchas deportivas. Mantenimiento",
+      "registros": 207,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Mobiliarios Urbanos",
+      "registros": 200,
+      "categoria_orientativa": null,
+      "estado_mapeo": "ambiguo",
+      "motivo": "La etiqueta sola no determina problema dominante",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Olores",
+      "registros": 198,
+      "categoria_orientativa": null,
+      "estado_mapeo": "ambiguo",
+      "motivo": "La etiqueta sola no determina problema dominante",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Piscinas municipales. Irregularidades cubetas",
+      "registros": 189,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Turismo. Información",
+      "registros": 183,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Plagas. Cucarachas",
+      "registros": 164,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Autobuses Urbanos",
+      "registros": 163,
+      "categoria_orientativa": "C3",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Inspecciones. Domicilios",
+      "registros": 158,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Jardines. Aparatos Biosaludables",
+      "registros": 153,
+      "categoria_orientativa": "C5",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Calles. Olores",
+      "registros": 151,
+      "categoria_orientativa": null,
+      "estado_mapeo": "ambiguo",
+      "motivo": "La etiqueta sola no determina problema dominante",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Inst. deportivas. Piscinas actividades",
+      "registros": 140,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Salud. Inspecciones. Domicilios",
+      "registros": 136,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Mobiliario urbano. Depósitos de pilas",
+      "registros": 136,
+      "categoria_orientativa": "C1",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Inst. deportivas. Mobiliario",
+      "registros": 125,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Mobiliario urbano. Vallas de obras",
+      "registros": 116,
+      "categoria_orientativa": null,
+      "estado_mapeo": "ambiguo",
+      "motivo": "La etiqueta sola no determina problema dominante",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Contenedores. Contenedores escombros",
+      "registros": 103,
+      "categoria_orientativa": null,
+      "estado_mapeo": "ambiguo",
+      "motivo": "La etiqueta sola no determina problema dominante",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Innovación y Comercio",
+      "registros": 100,
+      "categoria_orientativa": null,
+      "estado_mapeo": "ambiguo",
+      "motivo": "La etiqueta sola no determina problema dominante",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Embargos",
+      "registros": 100,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Mobiliario urbano. Marquesinas autobuses",
+      "registros": 99,
+      "categoria_orientativa": "C3",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Salud. Inspecciones. Locales abandonados",
+      "registros": 95,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Tributos",
+      "registros": 94,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Inspecciones. Locales abandonados",
+      "registros": 93,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Pista patinaje",
+      "registros": 88,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Mobiliario urbano. Carteleras",
+      "registros": 88,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Plagas. Ratas",
+      "registros": 81,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Bibliotecas: Mantenimiento, libros, etc.",
+      "registros": 81,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Inspección Técnica Edificios",
+      "registros": 78,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Plagas diversas",
+      "registros": 73,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Solares",
+      "registros": 71,
+      "categoria_orientativa": null,
+      "estado_mapeo": "ambiguo",
+      "motivo": "La etiqueta sola no determina problema dominante",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Planeamiento Urbanístico",
+      "registros": 66,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Licencias ambientales",
+      "registros": 64,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Mobiliario urbano. Vallas de actividades",
+      "registros": 63,
+      "categoria_orientativa": null,
+      "estado_mapeo": "ambiguo",
+      "motivo": "La etiqueta sola no determina problema dominante",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Inst. deportivas. Limpieza",
+      "registros": 63,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Piscinas municipales. Mantenimientos",
+      "registros": 62,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Canchas deportivas. Mobiliario",
+      "registros": 61,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Toros",
+      "registros": 56,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Laureada",
+      "registros": 46,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Plagas. Palomas",
+      "registros": 28,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Ruidos. Trabajo",
+      "registros": 27,
+      "categoria_orientativa": null,
+      "estado_mapeo": "ambiguo",
+      "motivo": "La etiqueta sola no determina problema dominante",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Piscinas municipales. Limpieza",
+      "registros": 18,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "VIVA",
+      "registros": 8,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Inst. deportivas. Piscinas munic. Mantenimientos",
+      "registros": 7,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Salud. Plagas diversas",
+      "registros": 7,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Invitación",
+      "registros": 6,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Fiestas",
+      "registros": 5,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Canchas deportivas. Limpieza",
+      "registros": 3,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "otros",
+      "registros": 3,
+      "categoria_orientativa": null,
+      "estado_mapeo": "ambiguo",
+      "motivo": "La etiqueta sola no determina problema dominante",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "",
+      "registros": 2,
+      "categoria_orientativa": null,
+      "estado_mapeo": "vacio",
+      "motivo": "No existe tema administrativo",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Salas exposiciones/ ferias temáticas",
+      "registros": 2,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Señalización viaria. Nueva Señalización",
+      "registros": 2,
+      "categoria_orientativa": "C3",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Vigilancia Policial",
+      "registros": 1,
+      "categoria_orientativa": "C4",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Mobiliario urbano. Depósito de pilas",
+      "registros": 1,
+      "categoria_orientativa": "C1",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "vigilancia policial",
+      "registros": 1,
+      "categoria_orientativa": "C4",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "mobiliario urbano. carteleras",
+      "registros": 1,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Mobiliario urbano. Tapas de Registro",
+      "registros": 1,
+      "categoria_orientativa": null,
+      "estado_mapeo": "ambiguo",
+      "motivo": "La etiqueta sola no determina problema dominante",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Instalaciones deportivas. Piscinas munic. Mantenimientos",
+      "registros": 1,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Policía. Vigilancia Policial",
+      "registros": 1,
+      "categoria_orientativa": "C4",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Tasas Y Tributos",
+      "registros": 1,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "bicicletas",
+      "registros": 1,
+      "categoria_orientativa": null,
+      "estado_mapeo": "ambiguo",
+      "motivo": "La etiqueta sola no determina problema dominante",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Asuntos sociales",
+      "registros": 1,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Inst. deportivas. Piscinas mun. Mantenimientos",
+      "registros": 1,
+      "categoria_orientativa": null,
+      "estado_mapeo": "sin_correspondencia",
+      "motivo": "Etiqueta sin correspondencia documentada; requiere inspección",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Señalización Viaria. Nueva señalización",
+      "registros": 1,
+      "categoria_orientativa": "C3",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Mobiliarios urbanos",
+      "registros": 1,
+      "categoria_orientativa": null,
+      "estado_mapeo": "ambiguo",
+      "motivo": "La etiqueta sola no determina problema dominante",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Relaciones Oficiales",
+      "registros": 1,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Agradecimiento",
+      "registros": 1,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Jardines. Avería de riego",
+      "registros": 1,
+      "categoria_orientativa": "C5",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Jardines. Árboles.",
+      "registros": 1,
+      "categoria_orientativa": "C5",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Alumbrado Público",
+      "registros": 1,
+      "categoria_orientativa": "C7",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Pavimenación. Accesos obras",
+      "registros": 1,
+      "categoria_orientativa": "C2",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Titularidad inmuebles",
+      "registros": 1,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Jardines. Árboles",
+      "registros": 1,
+      "categoria_orientativa": "C5",
+      "estado_mapeo": "compatible_orientativo",
+      "motivo": "Etiqueta administrativa comparable; no acredita descripción, veracidad ni competencia local",
+      "validado_humano": false
+    },
+    {
+      "tema_original": "Igualdad e Infancia",
+      "registros": 1,
+      "categoria_orientativa": null,
+      "estado_mapeo": "fuera_de_alcance",
+      "motivo": "Tema fuera del clasificador de incidencias urbanas",
+      "validado_humano": false
+    }
+  ],
+  "limitations": [
+    "Solo análisis descriptivo de registros externos; no evaluación de Juliaca",
+    "Frecuencias no son prioridades, cuotas locales ni datos de entrenamiento",
+    "C6 no tiene correspondencia inequívoca en este mapeo",
+    "No se importaron registros como incidencias operativas ni se cambió el modelo"
+  ],
+  "outputs": {
+    "temas.csv": {
+      "sha256": "a4a635de2e1d970feebe1a2a11afeb61b3d22425fed6498fcfaeef0f64aa7c86",
+      "rows": 157
+    },
+    "anios.csv": {
+      "sha256": "0fb10eccd915f5ac385c3136c2a0b453734e4dd33767e1a7db74334ca71dc672",
+      "rows": 12
+    },
+    "tipos.csv": {
+      "sha256": "3a1e566fc64474d3170af157d0c523d1e4da6c5848eafe74256713a27fdeef75",
+      "rows": 5
+    },
+    "correspondencias_c1_c8.csv": {
+      "sha256": "cfbd19d181d0108dbe12178be197db19e32ee93dbab09a9e385d060dce76993a",
+      "rows": 8
+    }
+  }
+}

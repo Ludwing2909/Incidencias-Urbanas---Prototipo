@@ -1,0 +1,126 @@
+[
+  {
+    "id": "A",
+    "capacidad": "Corpus local",
+    "prioridad": 1,
+    "estado": "bloqueada por dependencia externa",
+    "problema": "No hay corpus independiente de Juliaca.",
+    "cambio_propuesto": "Adquirir textos autorizados, anonimizar, dos anotadores, acuerdo previo y adjudicación; reservar test local.",
+    "dependencia": "Acceso autorizado y revisores locales",
+    "evidencia_requerida": "Permiso, corpus redactado, anotaciones independientes, acuerdo y adjudicación."
+  },
+  {
+    "id": "B",
+    "capacidad": "Evaluación experimental",
+    "prioridad": 1,
+    "estado": "parcialmente verificada",
+    "problema": "CV por grupos existe; falta evaluación real y separación por fuentes documentada.",
+    "cambio_propuesto": "Auditar por pliegue, congelar reglas sin acceso a retenidos y analizar soporte/errores; agrupar originales y variantes.",
+    "dependencia": "Corpus local con grupos y fuentes",
+    "evidencia_requerida": "Prueba reservada, hashes, controles de fuga y soporte por clase."
+  },
+  {
+    "id": "C",
+    "capacidad": "Modelado",
+    "prioridad": 2,
+    "estado": "parcialmente verificada",
+    "problema": "Comparación offline de palabras/caracteres, logística, LinearSVC, SVC RBF y NB ejecutada sobre textos elaborados; no hay evaluación local.",
+    "cambio_propuesto": "Búsqueda acotada de palabras/caracteres, LR, LinearSVC, SVC y NB; desarrollo para selección y calibración interna.",
+    "dependencia": "Datos adecuados y ejecución offline",
+    "evidencia_requerida": "Reportes comparables, test intacto y umbral revisado con validación."
+  },
+  {
+    "id": "D",
+    "capacidad": "Extracción",
+    "prioridad": 2,
+    "estado": "verificada",
+    "problema": "Reglas de fragmentos con valores nulos; precisión local no evaluada.",
+    "cambio_propuesto": "Problema, lugar general y tiempo con evidencia; corrección por aclaraciones.",
+    "dependencia": "Anotaciones de campos",
+    "evidencia_requerida": "Pruebas de fragmentos y evaluación local de precisión/omisiones.",
+    "evidencia_tecnica": "Pruebas API/PLN y navegador; verificación técnica del prototipo, no evaluación local."
+  },
+  {
+    "id": "E",
+    "capacidad": "Aclaraciones",
+    "prioridad": 2,
+    "estado": "verificada",
+    "problema": "Preguntas deterministas; falta evaluación de utilidad.",
+    "cambio_propuesto": "Respuestas del personal, versiones y análisis conservando original; continuar a revisión.",
+    "dependencia": "Revisión humana",
+    "evidencia_requerida": "Permisos, conflictos, historial y prueba de no repetir preguntas respondidas.",
+    "evidencia_tecnica": "Pruebas API/PLN y navegador; verificación técnica del prototipo, no evaluación local."
+  },
+  {
+    "id": "F",
+    "capacidad": "Incidencias relacionadas",
+    "prioridad": 2,
+    "estado": "verificada",
+    "problema": "Referencia coseno independiente; sin umbral validado local.",
+    "cambio_propuesto": "Índice offline, top-k y umbral, excluir propio/futuros y considerar lugar/tiempo; confirmar sin fusionar.",
+    "dependencia": "Construir índice administrativo",
+    "evidencia_requerida": "Pesos, límites, permisos, exclusiones y decisiones auditadas.",
+    "evidencia_tecnica": "Pruebas API/PLN y navegador; verificación técnica del prototipo, no evaluación local."
+  },
+  {
+    "id": "G",
+    "capacidad": "Mensajes de resultado",
+    "prioridad": 1,
+    "estado": "verificada",
+    "problema": "Persistencia y tarjeta de destino; ninguna derivación oficial.",
+    "cambio_propuesto": "Mostrar categoría, destino backend, revisión y secreto solo al registrar.",
+    "dependencia": "Reglas administrativas",
+    "evidencia_requerida": "Prueba registro/seguimiento y destino no validado visible.",
+    "evidencia_tecnica": "Pruebas API/PLN y navegador; verificación técnica del prototipo, no evaluación local."
+  },
+  {
+    "id": "H",
+    "capacidad": "Formulario y revisión",
+    "prioridad": 2,
+    "estado": "parcialmente verificada",
+    "problema": "Ejemplo, ubicación general libre, filtros y conteos de correcciones frente a la predicción original; catálogo local estructurado pendiente.",
+    "cambio_propuesto": "Añadir ubicación estructurada y conteos de correcciones por clase sin perder original.",
+    "dependencia": "Catálogo local de barrios autorizado",
+    "evidencia_requerida": "Accesibilidad, filtros y comparación original/actual."
+  },
+  {
+    "id": "I",
+    "capacidad": "Resumen fiel",
+    "prioridad": 3,
+    "estado": "pendiente",
+    "problema": "No se ejecuta resumen automático.",
+    "cambio_propuesto": "Empezar con selección de fragmentos verificables; medir omisiones y significado.",
+    "dependencia": "Corpus anotado para resumen",
+    "evidencia_requerida": "Evaluación independiente de fidelidad y omisiones."
+  },
+  {
+    "id": "J",
+    "capacidad": "Varios temas y prioridad",
+    "prioridad": 2,
+    "estado": "parcialmente verificada",
+    "problema": "Prioridad alta/media/baja por reglas y evidencia explícita, con negación limitada y revisión; falta evaluación local y no hay multilabel.",
+    "cambio_propuesto": "Evidencia explícita y aclaración; multilabel solo con anotación/evaluación propias.",
+    "dependencia": "Criterios y etiquetas de prioridad/multilabel",
+    "evidencia_requerida": "Errores de negación, falsos positivos/negativos y revisión humana."
+  },
+  {
+    "id": "K",
+    "capacidad": "Retroalimentación y versiones",
+    "prioridad": 2,
+    "estado": "parcialmente verificada",
+    "problema": "Correcciones y rollback existen; no hay ciclo local evaluado.",
+    "cambio_propuesto": "Adjudicar datos nuevos, evaluar candidato antes de activar; no reentrenar por corrección.",
+    "dependencia": "Corpus nuevo revisado",
+    "evidencia_requerida": "Manifiestos, test independiente por versión y rollback comprobado."
+  },
+  {
+    "id": "L",
+    "capacidad": "Operación PostgreSQL",
+    "prioridad": 1,
+    "estado": "bloqueada por dependencia externa",
+    "problema": "Motor Docker Linux no disponible al inspeccionar.",
+    "cambio_propuesto": "Verificar PostgreSQL, migraciones, concurrencia, respaldo/restauración y health; preservar permisos/idempotencia.",
+    "dependencia": "Docker Desktop operativo o PostgreSQL de pruebas",
+    "evidencia_requerida": "Ejecución completa con pruebas PostgreSQL y restore; config válida no basta."
+  }
+]

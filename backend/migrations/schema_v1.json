@@ -1,0 +1,631 @@
+[
+  {
+    "name": "incidents",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "length": 36,
+        "pk": true,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "code",
+        "type": "String",
+        "length": 30,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "year",
+        "type": "Integer",
+        "length": null,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "sequence",
+        "type": "Integer",
+        "length": null,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "secret_hash",
+        "type": "String",
+        "length": 64,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "idempotency_hash",
+        "type": "String",
+        "length": 64,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "request_hash",
+        "type": "String",
+        "length": 64,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "text",
+        "type": "Text",
+        "length": null,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "location",
+        "type": "String",
+        "length": 180,
+        "pk": false,
+        "nullable": true,
+        "foreign_key": null
+      },
+      {
+        "name": "state",
+        "type": "String",
+        "length": 40,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "current_topic",
+        "type": "String",
+        "length": 2,
+        "pk": false,
+        "nullable": true,
+        "foreign_key": null
+      },
+      {
+        "name": "current_destination",
+        "type": "String",
+        "length": 200,
+        "pk": false,
+        "nullable": true,
+        "foreign_key": null
+      },
+      {
+        "name": "revision",
+        "type": "Integer",
+        "length": null,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "created_at",
+        "type": "DateTime",
+        "length": null,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      }
+    ],
+    "unique": [
+      [
+        "code"
+      ],
+      [
+        "year",
+        "sequence"
+      ],
+      [
+        "idempotency_hash"
+      ]
+    ]
+  },
+  {
+    "name": "model_versions",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "length": 100,
+        "pk": true,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "manifest",
+        "type": "JSON",
+        "length": null,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "loaded_at",
+        "type": "DateTime",
+        "length": null,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      }
+    ],
+    "unique": []
+  },
+  {
+    "name": "rate_buckets",
+    "columns": [
+      {
+        "name": "key",
+        "type": "String",
+        "length": 100,
+        "pk": true,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "count",
+        "type": "Integer",
+        "length": null,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      }
+    ],
+    "unique": []
+  },
+  {
+    "name": "rules",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "length": 36,
+        "pk": true,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "category",
+        "type": "String",
+        "length": 2,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "territory",
+        "type": "String",
+        "length": 180,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "destination",
+        "type": "String",
+        "length": 200,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "conditions",
+        "type": "Text",
+        "length": null,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "validated",
+        "type": "Boolean",
+        "length": null,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "valid_from",
+        "type": "String",
+        "length": 10,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "valid_until",
+        "type": "String",
+        "length": 10,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "source",
+        "type": "Text",
+        "length": null,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "responsible",
+        "type": "String",
+        "length": 100,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "version",
+        "type": "Integer",
+        "length": null,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "active",
+        "type": "Boolean",
+        "length": null,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      }
+    ],
+    "unique": []
+  },
+  {
+    "name": "users",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "length": 36,
+        "pk": true,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "username",
+        "type": "String",
+        "length": 80,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "password_hash",
+        "type": "Text",
+        "length": null,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "role",
+        "type": "String",
+        "length": 20,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      }
+    ],
+    "unique": [
+      [
+        "username"
+      ]
+    ]
+  },
+  {
+    "name": "year_sequences",
+    "columns": [
+      {
+        "name": "year",
+        "type": "Integer",
+        "length": null,
+        "pk": true,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "value",
+        "type": "Integer",
+        "length": null,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      }
+    ],
+    "unique": []
+  },
+  {
+    "name": "audit",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "length": 36,
+        "pk": true,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "user_id",
+        "type": "String",
+        "length": 36,
+        "pk": false,
+        "nullable": true,
+        "foreign_key": "users.id"
+      },
+      {
+        "name": "action",
+        "type": "String",
+        "length": 60,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "entity_id",
+        "type": "String",
+        "length": 100,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "changes",
+        "type": "JSON",
+        "length": null,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "created_at",
+        "type": "DateTime",
+        "length": null,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      }
+    ],
+    "unique": []
+  },
+  {
+    "name": "predictions",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "length": 36,
+        "pk": true,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "incident_id",
+        "type": "String",
+        "length": 36,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": "incidents.id"
+      },
+      {
+        "name": "result",
+        "type": "JSON",
+        "length": null,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "latency_ms",
+        "type": "Integer",
+        "length": null,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      }
+    ],
+    "unique": [
+      [
+        "incident_id"
+      ]
+    ]
+  },
+  {
+    "name": "reviews",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "length": 36,
+        "pk": true,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "incident_id",
+        "type": "String",
+        "length": 36,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": "incidents.id"
+      },
+      {
+        "name": "user_id",
+        "type": "String",
+        "length": 36,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": "users.id"
+      },
+      {
+        "name": "original_topic",
+        "type": "String",
+        "length": 2,
+        "pk": false,
+        "nullable": true,
+        "foreign_key": null
+      },
+      {
+        "name": "topic",
+        "type": "String",
+        "length": 2,
+        "pk": false,
+        "nullable": true,
+        "foreign_key": null
+      },
+      {
+        "name": "original_destination",
+        "type": "String",
+        "length": 200,
+        "pk": false,
+        "nullable": true,
+        "foreign_key": null
+      },
+      {
+        "name": "destination",
+        "type": "String",
+        "length": 200,
+        "pk": false,
+        "nullable": true,
+        "foreign_key": null
+      },
+      {
+        "name": "reason",
+        "type": "Text",
+        "length": null,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "created_at",
+        "type": "DateTime",
+        "length": null,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      }
+    ],
+    "unique": []
+  },
+  {
+    "name": "sessions",
+    "columns": [
+      {
+        "name": "token_hash",
+        "type": "String",
+        "length": 64,
+        "pk": true,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "user_id",
+        "type": "String",
+        "length": 36,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": "users.id"
+      },
+      {
+        "name": "csrf_hash",
+        "type": "String",
+        "length": 64,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "expires_at",
+        "type": "DateTime",
+        "length": null,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      }
+    ],
+    "unique": []
+  },
+  {
+    "name": "state_history",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "length": 36,
+        "pk": true,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "incident_id",
+        "type": "String",
+        "length": 36,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": "incidents.id"
+      },
+      {
+        "name": "user_id",
+        "type": "String",
+        "length": 36,
+        "pk": false,
+        "nullable": true,
+        "foreign_key": "users.id"
+      },
+      {
+        "name": "previous",
+        "type": "String",
+        "length": 40,
+        "pk": false,
+        "nullable": true,
+        "foreign_key": null
+      },
+      {
+        "name": "state",
+        "type": "String",
+        "length": 40,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "reason",
+        "type": "Text",
+        "length": null,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      },
+      {
+        "name": "evidence",
+        "type": "Text",
+        "length": null,
+        "pk": false,
+        "nullable": true,
+        "foreign_key": null
+      },
+      {
+        "name": "created_at",
+        "type": "DateTime",
+        "length": null,
+        "pk": false,
+        "nullable": false,
+        "foreign_key": null
+      }
+    ],
+    "unique": []
+  }
+]

@@ -1,0 +1,17 @@
+fastapi==0.115.12
+pydantic==2.11.3
+uvicorn==0.34.2
+SQLAlchemy==2.0.40
+alembic==1.15.2
+psycopg[binary]==3.2.6
+pandas==2.2.3
+numpy==2.2.4
+scipy==1.15.2
+scikit-learn==1.6.1
+joblib==1.4.2
+argon2-cffi==23.1.0
+httpx==0.28.1
+pytest==8.3.5
+matplotlib==3.10.1
+python-dotenv==1.1.0
+nbformat==5.10.4

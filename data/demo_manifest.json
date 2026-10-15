@@ -1,0 +1,9 @@
+{
+  "method": "Textos elaborados por asistente y etiquetas según guía; no doble anotación humana",
+  "generator_version": "build_demo-v1",
+  "rows": 86,
+  "training_rows": 64,
+  "real_rows": 0,
+  "linguistic_local_review": false,
+  "sha256": "758c03e531dea653750450272cfaaf404baa21fc23e2950abb5105eba2bc3075"
+}

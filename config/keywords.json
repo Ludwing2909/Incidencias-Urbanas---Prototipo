@@ -1,0 +1,10 @@
+{
+  "C1": ["basura", "residuos", "desechos", "recojo", "contenedor"],
+  "C2": ["bache", "vereda", "pavimento", "drenaje pluvial", "pista", "sumidero pluvial"],
+  "C3": ["semáforo", "señalización", "tránsito", "vehículo", "combi", "cruce peatonal"],
+  "C4": ["robo", "asalto", "serenazgo", "agresión", "patrullaje"],
+  "C5": ["árbol", "césped", "jardín", "poda", "juegos infantiles"],
+  "C6": ["comerciante", "puesto", "venta", "mercadería", "fiscalización"],
+  "C7": ["luminaria", "alumbrado", "poste de luz", "farola", "lámpara"],
+  "C8": ["fuga de agua", "desagüe", "alcantarillado", "agua potable", "tubería sanitaria"]
+}

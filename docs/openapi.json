@@ -1,0 +1,2398 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Incidencias urbanas de Juliaca · Prototipo académico",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/v1/pln/analizar": {
+      "post": {
+        "summary": "Analysis",
+        "operationId": "analysis_api_v1_pln_analizar_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AnalysisInput"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AnalysisResult"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/pln/metadatos": {
+      "get": {
+        "summary": "Metadata",
+        "operationId": "metadata_api_v1_pln_metadatos_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/pln/capacidades": {
+      "get": {
+        "summary": "Roadmap",
+        "operationId": "roadmap_api_v1_pln_capacidades_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/pln/datos": {
+      "get": {
+        "summary": "Data Audit",
+        "operationId": "data_audit_api_v1_admin_pln_datos_get",
+        "parameters": [
+          {
+            "name": "version",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^[a-zA-Z0-9_-]{1,100}$"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Version"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/incidencias/{id}/analisis": {
+      "get": {
+        "summary": "Analysis History",
+        "operationId": "analysis_history_api_v1_admin_incidencias__id__analisis_get",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Stored Analysis",
+        "operationId": "stored_analysis_api_v1_admin_incidencias__id__analisis_post",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/incidencias/{id}/aclaraciones": {
+      "post": {
+        "summary": "Clarify",
+        "operationId": "clarify_api_v1_admin_incidencias__id__aclaraciones_post",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ClarificationInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/incidencias/{id}/extraccion": {
+      "post": {
+        "summary": "Correct Fields",
+        "operationId": "correct_fields_api_v1_admin_incidencias__id__extraccion_post",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExtractionCorrectionInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/incidencias/{id}/relacionados": {
+      "get": {
+        "summary": "Related",
+        "operationId": "related_api_v1_admin_incidencias__id__relacionados_get",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Id"
+            }
+          },
+          {
+            "name": "top_k",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 10,
+              "minimum": 1,
+              "default": 5,
+              "title": "Top K"
+            }
+          },
+          {
+            "name": "umbral",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "number",
+              "maximum": 1,
+              "minimum": 0,
+              "default": 0.25,
+              "title": "Umbral"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/incidencias/{id}/relaciones": {
+      "post": {
+        "summary": "Decide Relation",
+        "operationId": "decide_relation_api_v1_admin_incidencias__id__relaciones_post",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RelationInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/health/live": {
+      "get": {
+        "summary": "Live",
+        "operationId": "live_api_v1_health_live_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/health/ready": {
+      "get": {
+        "summary": "Ready",
+        "operationId": "ready_api_v1_health_ready_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/categorias": {
+      "get": {
+        "summary": "Categories",
+        "operationId": "categories_api_v1_categorias_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/incidencias": {
+      "post": {
+        "summary": "Register",
+        "operationId": "register_api_v1_incidencias_post",
+        "parameters": [
+          {
+            "name": "Idempotency-Key",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 32,
+              "maxLength": 100,
+              "title": "Idempotency-Key"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/IncidentInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Registration"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/seguimiento/consulta": {
+      "post": {
+        "summary": "Follow",
+        "operationId": "follow_api_v1_seguimiento_consulta_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FollowInput"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FollowResult"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/auth/login": {
+      "post": {
+        "summary": "Login",
+        "operationId": "login_api_v1_auth_login_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginInput"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoginResult"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/auth/me": {
+      "get": {
+        "summary": "Me",
+        "operationId": "me_api_v1_auth_me_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/auth/logout": {
+      "post": {
+        "summary": "Logout",
+        "operationId": "logout_api_v1_auth_logout_post",
+        "responses": {
+          "204": {
+            "description": "Successful Response"
+          }
+        }
+      }
+    },
+    "/api/v1/admin/incidencias": {
+      "get": {
+        "summary": "Inbox",
+        "operationId": "inbox_api_v1_admin_incidencias_get",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "maxLength": 100,
+              "default": "",
+              "title": "Q"
+            }
+          },
+          {
+            "name": "categoria",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Categoria"
+            }
+          },
+          {
+            "name": "estado",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Estado"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "default": 1,
+              "title": "Page"
+            }
+          },
+          {
+            "name": "size",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 100,
+              "minimum": 1,
+              "default": 20,
+              "title": "Size"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IncidentPage"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/incidencias/{id}": {
+      "get": {
+        "summary": "Detail",
+        "operationId": "detail_api_v1_admin_incidencias__id__get",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IncidentDetail"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/incidencias/{id}/revision": {
+      "post": {
+        "summary": "Review",
+        "operationId": "review_api_v1_admin_incidencias__id__revision_post",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReviewInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StateResult"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/incidencias/{id}/transiciones": {
+      "post": {
+        "summary": "Transition",
+        "operationId": "transition_api_v1_admin_incidencias__id__transiciones_post",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TransitionInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StateResult"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/reglas": {
+      "get": {
+        "summary": "Rules",
+        "operationId": "rules_api_v1_admin_reglas_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/RuleResult"
+                  },
+                  "type": "array",
+                  "title": "Response Rules Api V1 Admin Reglas Get"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create Rule",
+        "operationId": "create_rule_api_v1_admin_reglas_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RuleInput"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RuleResult"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/reglas/{id}": {
+      "patch": {
+        "summary": "Patch Rule",
+        "operationId": "patch_rule_api_v1_admin_reglas__id__patch",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RuleInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RuleResult"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/estadisticas": {
+      "get": {
+        "summary": "Statistics",
+        "operationId": "statistics_api_v1_admin_estadisticas_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StatsResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/modelo": {
+      "get": {
+        "summary": "Model",
+        "operationId": "model_api_v1_admin_modelo_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ModelResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/experimentos": {
+      "get": {
+        "summary": "Experiments",
+        "operationId": "experiments_api_v1_admin_experimentos_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/fuentes": {
+      "get": {
+        "summary": "Sources",
+        "operationId": "sources_api_v1_admin_fuentes_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AnalysisInput": {
+        "properties": {
+          "descripcion": {
+            "type": "string",
+            "maxLength": 3000,
+            "minLength": 1,
+            "title": "Descripcion"
+          },
+          "ubicacion_general": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 180
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Ubicacion General"
+          }
+        },
+        "type": "object",
+        "required": [
+          "descripcion"
+        ],
+        "title": "AnalysisInput"
+      },
+      "AnalysisResult": {
+        "properties": {
+          "version_traza": {
+            "type": "string",
+            "title": "Version Traza"
+          },
+          "version_modelo": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Version Modelo"
+          },
+          "valida": {
+            "type": "boolean",
+            "title": "Valida"
+          },
+          "simulacion": {
+            "type": "boolean",
+            "title": "Simulacion",
+            "default": true
+          },
+          "etapas": {
+            "items": {
+              "$ref": "#/components/schemas/TraceStage"
+            },
+            "type": "array",
+            "title": "Etapas"
+          },
+          "clasificacion": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Classification"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "extraccion": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Extraccion"
+          },
+          "preguntas": {
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "type": "array",
+            "title": "Preguntas"
+          },
+          "tiempo_total_ms": {
+            "type": "number",
+            "title": "Tiempo Total Ms"
+          }
+        },
+        "type": "object",
+        "required": [
+          "version_traza",
+          "version_modelo",
+          "valida",
+          "etapas",
+          "clasificacion",
+          "extraccion",
+          "preguntas",
+          "tiempo_total_ms"
+        ],
+        "title": "AnalysisResult"
+      },
+      "ClarificationInput": {
+        "properties": {
+          "version": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Version"
+          },
+          "respuestas": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object",
+            "title": "Respuestas"
+          }
+        },
+        "type": "object",
+        "required": [
+          "version",
+          "respuestas"
+        ],
+        "title": "ClarificationInput"
+      },
+      "Classification": {
+        "properties": {
+          "tema": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "C1",
+                  "C2",
+                  "C3",
+                  "C4",
+                  "C5",
+                  "C6",
+                  "C7",
+                  "C8"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Tema"
+          },
+          "tipo_puntuacion": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "probabilidad_calibrada",
+                  "probabilidad",
+                  "margen"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Tipo Puntuacion"
+          },
+          "puntuacion": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Puntuacion"
+          },
+          "requiere_revision": {
+            "type": "boolean",
+            "title": "Requiere Revision"
+          },
+          "motivos_revision": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Motivos Revision"
+          },
+          "ruta_revision": {
+            "anyOf": [
+              {
+                "type": "string",
+                "const": "R9"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Ruta Revision"
+          },
+          "destino_sugerido": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Destino Sugerido"
+          },
+          "prioridad": {
+            "type": "string",
+            "enum": [
+              "alta",
+              "media",
+              "baja",
+              "ordinaria",
+              "posible urgencia"
+            ],
+            "title": "Prioridad"
+          },
+          "evaluacion_prioridad": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Evaluacion Prioridad"
+          },
+          "alerta_posible_urgencia": {
+            "type": "boolean",
+            "title": "Alerta Posible Urgencia"
+          },
+          "motivo_urgencia": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Motivo Urgencia"
+          },
+          "estado": {
+            "type": "string",
+            "enum": [
+              "Pendiente de revisión",
+              "Sugerencia disponible",
+              "Revisado",
+              "Derivado",
+              "Resuelto"
+            ],
+            "title": "Estado"
+          },
+          "version_modelo": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Version Modelo"
+          },
+          "version_umbral": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Version Umbral"
+          },
+          "version_reglas": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Version Reglas"
+          },
+          "demostrativo": {
+            "type": "boolean",
+            "title": "Demostrativo"
+          },
+          "destino": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Destino"
+          }
+        },
+        "type": "object",
+        "required": [
+          "tema",
+          "tipo_puntuacion",
+          "puntuacion",
+          "requiere_revision",
+          "motivos_revision",
+          "ruta_revision",
+          "destino_sugerido",
+          "prioridad",
+          "alerta_posible_urgencia",
+          "motivo_urgencia",
+          "estado",
+          "version_modelo",
+          "version_umbral",
+          "version_reglas",
+          "demostrativo"
+        ],
+        "title": "Classification"
+      },
+      "ExtractionCorrectionInput": {
+        "properties": {
+          "version": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Version"
+          },
+          "campos": {
+            "additionalProperties": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "type": "object",
+            "title": "Campos"
+          }
+        },
+        "type": "object",
+        "required": [
+          "version",
+          "campos"
+        ],
+        "title": "ExtractionCorrectionInput"
+      },
+      "FollowEvent": {
+        "properties": {
+          "estado": {
+            "type": "string",
+            "enum": [
+              "Pendiente de revisión",
+              "Sugerencia disponible",
+              "Revisado",
+              "Derivado",
+              "Resuelto"
+            ],
+            "title": "Estado"
+          },
+          "fecha": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Fecha"
+          }
+        },
+        "type": "object",
+        "required": [
+          "estado",
+          "fecha"
+        ],
+        "title": "FollowEvent"
+      },
+      "FollowInput": {
+        "properties": {
+          "codigo": {
+            "type": "string",
+            "maxLength": 30,
+            "minLength": 1,
+            "title": "Codigo"
+          },
+          "secreto": {
+            "type": "string",
+            "maxLength": 200,
+            "minLength": 16,
+            "title": "Secreto"
+          }
+        },
+        "type": "object",
+        "required": [
+          "codigo",
+          "secreto"
+        ],
+        "title": "FollowInput"
+      },
+      "FollowResult": {
+        "properties": {
+          "codigo": {
+            "type": "string",
+            "title": "Codigo"
+          },
+          "estado": {
+            "type": "string",
+            "enum": [
+              "Pendiente de revisión",
+              "Sugerencia disponible",
+              "Revisado",
+              "Derivado",
+              "Resuelto"
+            ],
+            "title": "Estado"
+          },
+          "fecha": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Fecha"
+          },
+          "cronologia": {
+            "items": {
+              "$ref": "#/components/schemas/FollowEvent"
+            },
+            "type": "array",
+            "title": "Cronologia"
+          }
+        },
+        "type": "object",
+        "required": [
+          "codigo",
+          "estado",
+          "fecha",
+          "cronologia"
+        ],
+        "title": "FollowResult"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "IncidentDetail": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "code": {
+            "type": "string",
+            "title": "Code"
+          },
+          "year": {
+            "type": "integer",
+            "title": "Year"
+          },
+          "sequence": {
+            "type": "integer",
+            "title": "Sequence"
+          },
+          "state": {
+            "type": "string",
+            "enum": [
+              "Pendiente de revisión",
+              "Sugerencia disponible",
+              "Revisado",
+              "Derivado",
+              "Resuelto"
+            ],
+            "title": "State"
+          },
+          "current_topic": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "C1",
+                  "C2",
+                  "C3",
+                  "C4",
+                  "C5",
+                  "C6",
+                  "C7",
+                  "C8"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Current Topic"
+          },
+          "current_destination": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Current Destination"
+          },
+          "revision": {
+            "type": "integer",
+            "title": "Revision"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          },
+          "texto": {
+            "type": "string",
+            "title": "Texto"
+          },
+          "ubicacion_general": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Ubicacion General"
+          },
+          "prediccion": {
+            "$ref": "#/components/schemas/Classification"
+          },
+          "latencia_ms": {
+            "type": "integer",
+            "title": "Latencia Ms"
+          },
+          "revisiones": {
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "type": "array",
+            "title": "Revisiones"
+          },
+          "historial": {
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "type": "array",
+            "title": "Historial"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "code",
+          "year",
+          "sequence",
+          "state",
+          "current_topic",
+          "current_destination",
+          "revision",
+          "created_at",
+          "texto",
+          "ubicacion_general",
+          "prediccion",
+          "latencia_ms",
+          "revisiones",
+          "historial"
+        ],
+        "title": "IncidentDetail"
+      },
+      "IncidentInput": {
+        "properties": {
+          "descripcion": {
+            "type": "string",
+            "maxLength": 3000,
+            "minLength": 1,
+            "title": "Descripcion"
+          },
+          "ubicacion_general": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 180
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Ubicacion General"
+          }
+        },
+        "type": "object",
+        "required": [
+          "descripcion"
+        ],
+        "title": "IncidentInput"
+      },
+      "IncidentPage": {
+        "properties": {
+          "items": {
+            "items": {
+              "$ref": "#/components/schemas/IncidentSummary"
+            },
+            "type": "array",
+            "title": "Items"
+          },
+          "total": {
+            "type": "integer",
+            "title": "Total"
+          },
+          "page": {
+            "type": "integer",
+            "title": "Page"
+          },
+          "size": {
+            "type": "integer",
+            "title": "Size"
+          }
+        },
+        "type": "object",
+        "required": [
+          "items",
+          "total",
+          "page",
+          "size"
+        ],
+        "title": "IncidentPage"
+      },
+      "IncidentSummary": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "code": {
+            "type": "string",
+            "title": "Code"
+          },
+          "year": {
+            "type": "integer",
+            "title": "Year"
+          },
+          "sequence": {
+            "type": "integer",
+            "title": "Sequence"
+          },
+          "state": {
+            "type": "string",
+            "enum": [
+              "Pendiente de revisión",
+              "Sugerencia disponible",
+              "Revisado",
+              "Derivado",
+              "Resuelto"
+            ],
+            "title": "State"
+          },
+          "current_topic": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "C1",
+                  "C2",
+                  "C3",
+                  "C4",
+                  "C5",
+                  "C6",
+                  "C7",
+                  "C8"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Current Topic"
+          },
+          "current_destination": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Current Destination"
+          },
+          "revision": {
+            "type": "integer",
+            "title": "Revision"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "code",
+          "year",
+          "sequence",
+          "state",
+          "current_topic",
+          "current_destination",
+          "revision",
+          "created_at"
+        ],
+        "title": "IncidentSummary"
+      },
+      "LoginInput": {
+        "properties": {
+          "usuario": {
+            "type": "string",
+            "maxLength": 80,
+            "minLength": 1,
+            "title": "Usuario"
+          },
+          "password": {
+            "type": "string",
+            "maxLength": 200,
+            "minLength": 1,
+            "title": "Password"
+          }
+        },
+        "type": "object",
+        "required": [
+          "usuario",
+          "password"
+        ],
+        "title": "LoginInput"
+      },
+      "LoginResult": {
+        "properties": {
+          "usuario": {
+            "type": "string",
+            "title": "Usuario"
+          },
+          "rol": {
+            "type": "string",
+            "enum": [
+              "administrador",
+              "revisor"
+            ],
+            "title": "Rol"
+          },
+          "csrf_token": {
+            "type": "string",
+            "title": "Csrf Token"
+          }
+        },
+        "type": "object",
+        "required": [
+          "usuario",
+          "rol",
+          "csrf_token"
+        ],
+        "title": "LoginResult"
+      },
+      "ModelResult": {
+        "properties": {
+          "disponible": {
+            "type": "boolean",
+            "title": "Disponible"
+          },
+          "motivo": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Motivo"
+          },
+          "manifiesto": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Manifiesto"
+          },
+          "limites": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Limites"
+          }
+        },
+        "type": "object",
+        "required": [
+          "disponible",
+          "motivo",
+          "manifiesto",
+          "limites"
+        ],
+        "title": "ModelResult"
+      },
+      "Registration": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "codigo": {
+            "type": "string",
+            "title": "Codigo"
+          },
+          "secreto_seguimiento": {
+            "type": "string",
+            "title": "Secreto Seguimiento"
+          },
+          "clasificacion": {
+            "$ref": "#/components/schemas/Classification"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "codigo",
+          "secreto_seguimiento",
+          "clasificacion"
+        ],
+        "title": "Registration"
+      },
+      "RelationInput": {
+        "properties": {
+          "relacionado_id": {
+            "type": "string",
+            "maxLength": 36,
+            "minLength": 36,
+            "title": "Relacionado Id"
+          },
+          "decision": {
+            "type": "string",
+            "enum": [
+              "confirmar",
+              "descartar"
+            ],
+            "title": "Decision"
+          },
+          "motivo": {
+            "type": "string",
+            "maxLength": 1000,
+            "minLength": 8,
+            "title": "Motivo"
+          }
+        },
+        "type": "object",
+        "required": [
+          "relacionado_id",
+          "decision",
+          "motivo"
+        ],
+        "title": "RelationInput"
+      },
+      "ReviewInput": {
+        "properties": {
+          "tema": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "C1",
+                  "C2",
+                  "C3",
+                  "C4",
+                  "C5",
+                  "C6",
+                  "C7",
+                  "C8"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Tema"
+          },
+          "destino": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 200
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Destino"
+          },
+          "motivo": {
+            "type": "string",
+            "maxLength": 1500,
+            "minLength": 8,
+            "title": "Motivo"
+          },
+          "version": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Version"
+          }
+        },
+        "type": "object",
+        "required": [
+          "tema",
+          "motivo",
+          "version"
+        ],
+        "title": "ReviewInput"
+      },
+      "RuleInput": {
+        "properties": {
+          "category": {
+            "type": "string",
+            "enum": [
+              "C1",
+              "C2",
+              "C3",
+              "C4",
+              "C5",
+              "C6",
+              "C7",
+              "C8"
+            ],
+            "title": "Category"
+          },
+          "territory": {
+            "type": "string",
+            "maxLength": 180,
+            "minLength": 1,
+            "title": "Territory"
+          },
+          "destination": {
+            "type": "string",
+            "maxLength": 200,
+            "minLength": 1,
+            "title": "Destination"
+          },
+          "conditions": {
+            "type": "string",
+            "maxLength": 1500,
+            "minLength": 1,
+            "title": "Conditions"
+          },
+          "validated": {
+            "type": "boolean",
+            "title": "Validated",
+            "default": false
+          },
+          "valid_from": {
+            "type": "string",
+            "format": "date",
+            "title": "Valid From"
+          },
+          "valid_until": {
+            "type": "string",
+            "format": "date",
+            "title": "Valid Until"
+          },
+          "source": {
+            "type": "string",
+            "maxLength": 1500,
+            "minLength": 1,
+            "title": "Source"
+          },
+          "responsible": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1,
+            "title": "Responsible"
+          },
+          "version": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Version",
+            "default": 1
+          },
+          "active": {
+            "type": "boolean",
+            "title": "Active",
+            "default": true
+          }
+        },
+        "type": "object",
+        "required": [
+          "category",
+          "territory",
+          "destination",
+          "conditions",
+          "valid_from",
+          "valid_until",
+          "source",
+          "responsible"
+        ],
+        "title": "RuleInput"
+      },
+      "RuleResult": {
+        "properties": {
+          "category": {
+            "type": "string",
+            "enum": [
+              "C1",
+              "C2",
+              "C3",
+              "C4",
+              "C5",
+              "C6",
+              "C7",
+              "C8"
+            ],
+            "title": "Category"
+          },
+          "territory": {
+            "type": "string",
+            "maxLength": 180,
+            "minLength": 1,
+            "title": "Territory"
+          },
+          "destination": {
+            "type": "string",
+            "maxLength": 200,
+            "minLength": 1,
+            "title": "Destination"
+          },
+          "conditions": {
+            "type": "string",
+            "maxLength": 1500,
+            "minLength": 1,
+            "title": "Conditions"
+          },
+          "validated": {
+            "type": "boolean",
+            "title": "Validated",
+            "default": false
+          },
+          "valid_from": {
+            "type": "string",
+            "format": "date",
+            "title": "Valid From"
+          },
+          "valid_until": {
+            "type": "string",
+            "format": "date",
+            "title": "Valid Until"
+          },
+          "source": {
+            "type": "string",
+            "maxLength": 1500,
+            "minLength": 1,
+            "title": "Source"
+          },
+          "responsible": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1,
+            "title": "Responsible"
+          },
+          "version": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Version",
+            "default": 1
+          },
+          "active": {
+            "type": "boolean",
+            "title": "Active",
+            "default": true
+          },
+          "id": {
+            "type": "string",
+            "title": "Id"
+          }
+        },
+        "type": "object",
+        "required": [
+          "category",
+          "territory",
+          "destination",
+          "conditions",
+          "valid_from",
+          "valid_until",
+          "source",
+          "responsible",
+          "id"
+        ],
+        "title": "RuleResult"
+      },
+      "StateResult": {
+        "properties": {
+          "estado": {
+            "type": "string",
+            "enum": [
+              "Pendiente de revisión",
+              "Sugerencia disponible",
+              "Revisado",
+              "Derivado",
+              "Resuelto"
+            ],
+            "title": "Estado"
+          },
+          "version": {
+            "type": "integer",
+            "title": "Version"
+          }
+        },
+        "type": "object",
+        "required": [
+          "estado",
+          "version"
+        ],
+        "title": "StateResult"
+      },
+      "StatsResult": {
+        "properties": {
+          "total": {
+            "type": "integer",
+            "title": "Total"
+          },
+          "por_categoria": {
+            "additionalProperties": {
+              "type": "integer"
+            },
+            "propertyNames": {
+              "enum": [
+                "C1",
+                "C2",
+                "C3",
+                "C4",
+                "C5",
+                "C6",
+                "C7",
+                "C8"
+              ]
+            },
+            "type": "object",
+            "title": "Por Categoria"
+          },
+          "sin_tema": {
+            "type": "integer",
+            "title": "Sin Tema"
+          },
+          "por_estado": {
+            "additionalProperties": {
+              "type": "integer"
+            },
+            "type": "object",
+            "title": "Por Estado"
+          },
+          "motivos_revision": {
+            "additionalProperties": {
+              "type": "integer"
+            },
+            "type": "object",
+            "title": "Motivos Revision"
+          },
+          "revisados": {
+            "type": "integer",
+            "title": "Revisados"
+          },
+          "correcciones": {
+            "type": "integer",
+            "title": "Correcciones"
+          },
+          "latencia_media_ms": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Latencia Media Ms"
+          },
+          "tasa_revision_inicial": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Tasa Revision Inicial"
+          },
+          "correcciones_por_categoria": {
+            "additionalProperties": {
+              "type": "integer"
+            },
+            "type": "object",
+            "title": "Correcciones Por Categoria"
+          }
+        },
+        "type": "object",
+        "required": [
+          "total",
+          "por_categoria",
+          "sin_tema",
+          "por_estado",
+          "motivos_revision",
+          "revisados",
+          "correcciones",
+          "latencia_media_ms",
+          "tasa_revision_inicial"
+        ],
+        "title": "StatsResult"
+      },
+      "TraceStage": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "nombre": {
+            "type": "string",
+            "title": "Nombre"
+          },
+          "estado": {
+            "type": "string",
+            "enum": [
+              "aplicada",
+              "omitida",
+              "no implementada",
+              "no disponible"
+            ],
+            "title": "Estado"
+          },
+          "motivo": {
+            "type": "string",
+            "title": "Motivo"
+          },
+          "entrada": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Entrada"
+          },
+          "salida": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Salida"
+          },
+          "transformaciones": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Transformaciones"
+          },
+          "version": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Version"
+          },
+          "tiempo_ms": {
+            "type": "number",
+            "title": "Tiempo Ms"
+          },
+          "limitacion": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Limitacion"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "nombre",
+          "estado",
+          "motivo",
+          "tiempo_ms"
+        ],
+        "title": "TraceStage"
+      },
+      "TransitionInput": {
+        "properties": {
+          "estado": {
+            "type": "string",
+            "enum": [
+              "Pendiente de revisión",
+              "Sugerencia disponible",
+              "Revisado",
+              "Derivado",
+              "Resuelto"
+            ],
+            "title": "Estado"
+          },
+          "motivo": {
+            "type": "string",
+            "maxLength": 1500,
+            "minLength": 8,
+            "title": "Motivo"
+          },
+          "evidencia": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 1500
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Evidencia"
+          },
+          "confirmacion_humana": {
+            "type": "boolean",
+            "title": "Confirmacion Humana",
+            "default": false
+          },
+          "version": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Version"
+          }
+        },
+        "type": "object",
+        "required": [
+          "estado",
+          "motivo",
+          "version"
+        ],
+        "title": "TransitionInput"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    }
+  }
+}

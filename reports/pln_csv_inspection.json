@@ -1,0 +1,155 @@
+[
+  {
+    "archivo": "data\\demo_particionado.csv",
+    "filas": 86,
+    "columnas": [
+      "id",
+      "texto_reclamo",
+      "categoria",
+      "fuente",
+      "tipo_dato",
+      "validado",
+      "grupo_origen",
+      "particion",
+      "motivo_revision",
+      "transformacion",
+      "licencia_autorizacion"
+    ],
+    "incorporacion": "Corpus elaborado existente"
+  },
+  {
+    "archivo": "data\\demostracion.csv",
+    "filas": 86,
+    "columnas": [
+      "id",
+      "texto_reclamo",
+      "categoria",
+      "fuente",
+      "tipo_dato",
+      "validado",
+      "grupo_origen",
+      "particion",
+      "motivo_revision",
+      "transformacion",
+      "licencia_autorizacion"
+    ],
+    "incorporacion": "Corpus elaborado existente"
+  },
+  {
+    "archivo": "data\\plantilla.csv",
+    "filas": 0,
+    "columnas": [
+      "id",
+      "texto_reclamo",
+      "categoria",
+      "fuente",
+      "tipo_dato",
+      "validado",
+      "grupo_origen",
+      "particion",
+      "motivo_revision",
+      "transformacion",
+      "licencia_autorizacion"
+    ],
+    "incorporacion": "No incorporado; plantilla o fuente externa"
+  },
+  {
+    "archivo": "data\\raw\\aviles.csv",
+    "filas": 2020,
+    "columnas": [
+      "_id",
+      "Numero de usuario",
+      "Categoria",
+      "Titulo",
+      "Descripcion",
+      "Fecha de alta",
+      "Estado",
+      "Fecha de cierre",
+      "Canal de entrada",
+      "Canal de respuesta",
+      "Latitud",
+      "Longitud"
+    ],
+    "incorporacion": "No incorporado; plantilla o fuente externa"
+  },
+  {
+    "archivo": "data\\templates\\adjudicacion.csv",
+    "filas": 0,
+    "columnas": [
+      "id",
+      "etiqueta_final",
+      "adjudicador",
+      "fecha",
+      "motivo",
+      "version_guia"
+    ],
+    "incorporacion": "No incorporado; plantilla o fuente externa"
+  },
+  {
+    "archivo": "data\\templates\\anotacion_independiente.csv",
+    "filas": 0,
+    "columnas": [
+      "id",
+      "anotador_a",
+      "anotador_b"
+    ],
+    "incorporacion": "No incorporado; plantilla o fuente externa"
+  },
+  {
+    "archivo": "data\\templates\\autorizacion_fuente.csv",
+    "filas": 0,
+    "columnas": [
+      "fuente",
+      "titular",
+      "referencia_permiso",
+      "alcance_reutilizacion",
+      "fecha_autorizacion",
+      "responsable",
+      "estado"
+    ],
+    "incorporacion": "No incorporado; plantilla o fuente externa"
+  },
+  {
+    "archivo": "data\\templates\\extraccion_referencia.csv",
+    "filas": 0,
+    "columnas": [
+      "id",
+      "problema_principal",
+      "evidencia_problema",
+      "lugar_general",
+      "evidencia_lugar",
+      "referencia_temporal",
+      "evidencia_tiempo",
+      "revisor",
+      "version_guia"
+    ],
+    "incorporacion": "No incorporado; plantilla o fuente externa"
+  },
+  {
+    "archivo": "data\\templates\\relaciones_referencia.csv",
+    "filas": 0,
+    "columnas": [
+      "id",
+      "relacionado_id",
+      "fecha_corte",
+      "relacion_confirmada",
+      "motivo",
+      "revisor",
+      "version_guia"
+    ],
+    "incorporacion": "No incorporado; plantilla o fuente externa"
+  },
+  {
+    "archivo": "data\\templates\\reserva_test_local.csv",
+    "filas": 0,
+    "columnas": [
+      "grupo_origen",
+      "fuente",
+      "fecha_reserva",
+      "criterio_local_temporal",
+      "responsable",
+      "version_corpus"
+    ],
+    "incorporacion": "No incorporado; plantilla o fuente externa"
+  }
+]

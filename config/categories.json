@@ -1,0 +1,13 @@
+{
+  "version": "C1-C8-v1",
+  "categories": {
+    "C1": "Limpieza pública y residuos sólidos",
+    "C2": "Infraestructura urbana y drenaje pluvial",
+    "C3": "Transporte, tránsito y seguridad vial",
+    "C4": "Seguridad ciudadana y Serenazgo",
+    "C5": "Parques, áreas verdes y ornato",
+    "C6": "Comercio y fiscalización municipal",
+    "C7": "Alumbrado público",
+    "C8": "Agua y alcantarillado"
+  }
+}

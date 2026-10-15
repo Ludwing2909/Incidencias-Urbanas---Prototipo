@@ -1,0 +1,10 @@
+{
+  "status": "pendiente: no hay corpus real autorizado ni evaluación local",
+  "real_local": {"n": 0, "accuracy": null, "macro_f1": null},
+  "real_external": {"n": 0, "accuracy": null, "macro_f1": null},
+  "selective_accuracy": null,
+  "coverage": null,
+  "administrative_destination_reference_n": 0,
+  "destination_agreement": null,
+  "note": "Plantilla vacía; no es un experimento ejecutado. Use ml.cli con datos autorizados y anonimización revisada."
+}
